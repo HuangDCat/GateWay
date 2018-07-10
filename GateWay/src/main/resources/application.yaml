@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: spring-cloud-gateway
+  cloud:
+    gateway:
+      routes:
+      - id: hhg_route
+        uri: http://baidu.com/
+        predicates:
+        - Path=/hmm
